@@ -1,0 +1,88 @@
+/*CUSTOM CSS FILE*/
+@font-face {
+  font-family: RobotoCondensed-Regular;
+  src: url("../../assets/fonts/RobotoCondensed-Regular.ttf");
+}
+header{
+  height: 500px;
+}
+nav{
+
+  z-index: 9;
+}
+.text-deco-none{
+  text-decoration: none !important;
+}
+.teal{
+  background-color: #7bcbc1 !important;
+}
+.text-lteal{
+  color: #7bcbc1;
+}
+.bg-transparent{
+  background:transparent!important;
+}
+.dsng_links {
+  font-size: 1.12rem;
+  font-family: RobotoCondensed-Regular;
+  }
+
+.line {
+  width:25%;
+  background: linear-gradient(to top left, #7bcbc1 calc(50% - 1px), #fff, #7bcbc1 calc(50% + 1px));
+  height: 500px;
+}
+.line-orange{
+  background: linear-gradient(to top left, #ebb240 calc(50% - 1px), #fff, #ebb240 calc(50% + 1px));
+}
+.orange-box-one{
+  width: 465px;
+  height: 500px;
+}
+.collapse-button{
+  left:40%;
+  top: 10%;
+}
+.address1{
+    left: 10%;
+    top: 50%;
+    font-size: 0.81rem;
+}
+.address2{
+  top: 75%;
+  left: 27%;
+  font-size: 0.81rem;
+}
+#collapse2{
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 10;
+  width: 100%;
+ }
+.grid-sizer{
+  width: 20%;
+}
+.grid-item{
+  width: 20%;
+
+}
+.grid-item-width2 { width: 40%; }
+.grid-item-width3 { width: 60%;}
+.grid-item-width3 { width: 80%;}
+.grid-item-height2{ height: 40%;}
+.grid-item-height3{ height: 60%;}
+.grid-item-height4{ height: 80%;}
+/* CATEGORIES*/
+
+/*media queries*/
+@media (min-width: 576px) {}
+
+/*Medium devices (tablets, 768px and up)MD*/
+@media (min-width: 768px) {}
+
+/*Large devices (desktops, 992px and up)LG*/
+@media (min-width: 992px) {}
+
+/*Extra large devices (large desktops, 1200px and up)XL*/
+@media (min-width: 1200px) {}

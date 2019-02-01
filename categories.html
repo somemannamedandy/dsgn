@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="bootstrap template">  <!--Description for search engine-->
+    <meta name="keywords" content="HTML,CSS,SCSS,JavaScript,Bootstrap"> <!--keywords for search engine-->
+    <meta name="author" content="Andy Basyn">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!--Scale viewport "shrink-to-fit"default yes => can zoom on mobile if no,you can no longer zoom-->
+    <link rel="icon" href="assets/images/DSGN.png" type="image/gif" sizes="16x16">
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="bootstrap-4.1.3/css/bootstrap.min.css">
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!--inulr-->
+    <title>categories</title>
+</head>
+<body class="container-fluid">
+<header class="container">
+    <nav class="navbar navbar-expand-lg navbar-white bg-white d-flex">
+        <a class="navbar-brand" href="#"><img src="https://via.placeholder.com/150x150" alt="logo" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto d-flex">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary text-uppercase link-after text-bold" href="#" id="mensDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        men :
+                    </a>
+                    <div class="dropdown-menu rounded-0" aria-labelledby="mensDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary text-uppercase link-after text-bold" href="#" id="womensDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        women :
+                    </a>
+                    <div class="dropdown-menu rounded-0" aria-labelledby="womensDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary text-uppercase link-after text-bold" href="#" id="boysDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        boys :
+                    </a>
+                    <div class="dropdown-menu rounded-0" aria-labelledby="boysDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary text-uppercase link-after text-bold" href="#" id="girlsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        girls :
+                    </a>
+                    <div class="dropdown-menu rounded-0" aria-labelledby="girlsDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary text-uppercase link-after text-bold" href="#" id="sportswearDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        sportswear :
+                    </a>
+                    <div class="dropdown-menu rounded-0" aria-labelledby="sportswearDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+        <form class="form-inline my-2 my-lg-0 align-self-start">
+
+            <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-append bg-white">
+                    <div class="input-group-text bg-white border-0"><a href="#" class="text-deco-none text-secondary fas fa-search"></a></div>
+                </div>
+                <input class="form-control mr-sm-2 rounded-0 focus-off" type="search" placeholder="Search" aria-label="Search">
+            </div>
+        </form>
+
+    </nav>
+    <div class="row  border-bottom">
+        <div class="col-12 d-flex">
+            <h1 class="text-capitalize text-dark ">woman dresses</h1>
+            <ul class="navbar-nav flex-row ml-auto">
+                <li class="text-capitalize text-secondary nav-item dropdown">
+                    <select id="languangeSelect" class="border-0 text-secondary text-capitalize focus-off">
+                        <option value="1" class="">english</option>
+                        <option value="2" class="">german</option>
+                        <option value="3" class="">日本語</option>
+                    </select>
+                </li>
+                <li class="text-capitalize text-secondary nav-item mr-5">
+                    <select id="currencySelect" class="border-0 text-secondary text-uppercase focus-off">
+                        <option value="1" class="">&pound; gbp</option>
+                        <option value="2" class="">&euro; eur</option>
+                        <option value="3" class="">&yen; jpy</option>
+                    </select>
+                </li>
+                <li class="nav-item dropdown position-relative">
+                    <a class="nav-link dropdown-toggle text-secondary link-after p-0" href="#" id="cartDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-shopping-cart"></i> 2 item(s) - <span class="cartCurrency">&pound;</span><span id="cartTotal">540</span>
+                    </a>
+                    <div class="dropdown-menu rounded-0 dropdown-menu-right" aria-labelledby="cartDropdown" id="cart">
+                        <p class="text-secondary ml-2">Recently added item(s)</p>
+                        <div class="product border-secondary m-2 position-relative">
+                            <div class="close position-absolute"><i class="fas fa-times text-dark"></i></div>
+                            <img src="https://via.placeholder.com/66x83" alt="get alt" class="p-2">
+                            <a class="text-deco-none text-dark text-uppercase product-name position-absolute" href="#">product name</a>
+                            <p class="text-secondary position-absolute cart-amount"><span class="cartAmount">1</span>x <span class="cartCurrency text-danger">&pound;</span><span class="productPrice text-danger">400</span></p>
+                        </div>
+                        <div class="product border-secondary m-2 position-relative">
+                            <div class="close position-absolute"><i class="fas fa-times text-dark"></i></div>
+                            <img src="https://via.placeholder.com/66x83" alt="get alt" class="p-2">
+                            <a class="text-deco-none text-dark text-uppercase product-name position-absolute" href="#">product name</a>
+                            <p class="text-secondary position-absolute cart-amount"><span class="cartAmount">1</span>x <span class="cartCurrency text-danger">&pound;</span><span class="productPrice text-danger">400</span></p>
+                        </div>
+                        <p class="text-uppercase text-dark ml-2 mb-0">shipping: <span class="currency text-danger">&dollar;</span><span class="text-danger">7</span></p>
+                        <p class="text-uppercase text-dark ml-2 mt-0">shipping: <span class="currency text-danger">&dollar;</span><span class="text-danger">7</span></p>
+                        <button class="btn-dark btn text-white rounded-0" id="checkoutBtn">checkout</button>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</header>
+<main class="container">
+    <!--breadcrum-->
+    <div class="row">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-white">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-capitalize">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.html" class="text-capitalize">Women</a></li>
+                    <li class="breadcrumb-item text-capitalize active" aria-current="page">dresses</li>
+                </ol>
+            </nav>
+        </div>
+
+    </div>
+    <!--end breadcrum-->
+    <div class="row d-none d-lg-block">
+        <div class="col-12">
+            <div id="highlight" class="d-flex justify-content-start flex-column w-100">
+                <h2 class="text-white text-capitalize mt-5 ml-5">man.</h2>
+                <p class="text-white ml-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                    Accusamus, architecto deleniti dolores eligendi non repellendus saepe vel? Aperiam, culpa ducimus neque nobis nulla placeat qui,
+                    <br>
+                    recusandae soluta, tenetur unde voluptas...
+                </p>
+            </div>
+        </div>
+    </div>
+        <!--color size-->
+        <div class="row">
+        <div class="col-12">
+            <ul class="navbar-nav flex-row ml-auto my-1 my-lg-3">
+                <li class="text-capitalize text-secondary nav-item dropdown">
+                    <label for="size" class="text-uppercase text-dark">size</label>
+                    <select id="size" class="border-0 text-secondary focus-off">
+                        <option value="1" class="">s</option>
+                        <option value="2" class="">m</option>
+                        <option value="3" class="">l</option>
+                    </select>
+                </li>
+                <li class="text-capitalize text-secondary nav-item mr-5">
+                    <label for="color" class="text-uppercase text-dark">color</label>
+                    <select id="color" class="border-0 text-secondary focus-off">
+                        <option value="1" class="">blue  </option>
+                        <option value="2" class="">green </option>
+                        <option value="3" class="">red  </option>
+                    </select>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+        <!--color size en-->
+        <div class="row">
+            <div class="col-md-6 col-12 col-lg-4">
+                <div class="card border-0" style="width: 22rem;">
+                                    <img src="https://via.placeholder.com/226x282" class="d-block w-100 position-relative" alt="carouselitempic">
+                                    <div class="flex-row position-absolute carousel-stars">
+                                        <span class="fa fa-star text-warning"></span>
+                                        <span class="fa fa-star text-warning"></span>
+                                        <span class="fa fa-star text-warning"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="d-flex flex-column position-absolute carousel-color-picker">
+                                        <div class="color-picker bg-primary mt-1 ml-2"></div>
+                                        <div class="color-picker bg-success mt-1 ml-2"></div>
+                                        <div class="color-picker bg-warning mt-1 ml-2"></div>
+                                    </div>
+                                    <div class="card-body px-0 py-1">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="text-danger font-weight-bold"><span class="currency">&dollar;</span>78</p> <div><i class="fas fa-heart text-secondary"></i><span class="text-secondary">5</span></div>
+                                        </div>
+
+                                        <h5 class="card-title"><a href="" class="text-dark text-uppercase">product name</a></h5>
+
+                                    </div>
+                                </div>
+            </div>
+            <div class="col-md-6 col-12 col-lg-4">
+                <div class="card border-0" style="width: 22rem;">
+                                    <img src="https://via.placeholder.com/226x282" class="d-block w-100 position-relative" alt="carouselitempic">
+                                    <div class="flex-row position-absolute carousel-stars">
+                                        <span class="fa fa-star text-warning"></span>
+                                        <span class="fa fa-star text-warning"></span>
+                                        <span class="fa fa-star text-warning"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="d-flex flex-column position-absolute carousel-color-picker">
+                                        <div class="color-picker bg-primary mt-1 ml-2"></div>
+                                        <div class="color-picker bg-success mt-1 ml-2"></div>
+                                        <div class="color-picker bg-warning mt-1 ml-2"></div>
+                                    </div>
+                                    <div class="card-body px-0 py-1">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <p class="text-danger font-weight-bold"><span class="currency">&dollar;</span>78</p> <div><i class="fas fa-heart text-secondary"></i><span class="text-secondary">5</span></div>
+                                        </div>
+
+                                        <h5 class="card-title"><a href="" class="text-dark text-uppercase">product name</a></h5>
+
+                                    </div>
+                                </div>
+            </div>
+            <div class="col-12 col-lg-4"></div>
+        </div>
+
+
+</main>
+<footer class="container">
+    <section id="info" class="row">
+        <div class="col-12 col-md-4">
+            <h4 class="text-uppercase text-dark mb-lg-5">useful links</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#" class="text-deco-none text-dark text-capitalize">about us</a></li>
+                <li class="list-group-item"><a href="#" class="text-deco-none text-dark text-capitalize">delivery</a></li>
+                <li class="list-group-item"><a href="#" class="text-deco-none text-dark text-capitalize">legal notice</a></li>
+                <li class="list-group-item"><a href="#" class="text-deco-none text-dark text-capitalize">secure payment</a></li>
+                <li class="list-group-item"><a href="#" class="text-deco-none text-dark text-capitalize">terms &amp; conditions</a></li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-4">
+            <h4 class="text-uppercase text-dark mb-lg-5">from twitter</h4>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <small class="text-muted">about 1 hour(s) ago</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    <small class="text-muted">about 1 hour(s) ago</small>
+                </a>
+
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <h4 class="text-uppercase text-dark mb-lg-5">contacts</h4>
+            <label for="inputPassword2" class="text-dark text-uppercase font-weight-bold">sign up for newsletter</label>
+            <form class="form-inline border-bottom border-secondary pb-lg-3">
+                <div class="form-group mb-2">
+                    <input type="email" class="form-control rounded-0 focus-off" id="inputPassword2" placeholder="Enter up for newsletter">
+                </div>
+                <button type="submit" class="btn text-white text-uppercase btn-secondary mb-2 rounded-0 focus-off">submit</button>
+            </form>
+            <address class="text-secondary text-capitalize pt-lg-2">
+                oxford street 48/188, <br>
+                london 02342, united kingdom <br>
+                <br>
+                phone: <a href="tel:+8900415-7812" class="text-deco-none text-secondary">8 (900) 415-7812</a> <br>
+                fax:    <a href="tel:+8900415-7812" class="text-deco-none text-secondary">8 (900) 415-7812</a> <br>
+                <br>
+                e-mail: <a href="mailto:trego@gmail.com?Subject=info" target="_top" class="text-deco-none text-secondary">trego@gmail.com</a>
+            </address>
+        </div>
+    </section>
+    <section class="row border-top border-secondary" id="bottom-nav">
+        <ul class="nav d-flex ">
+            <li class="nav-item pr-1">
+                <a class="nav-link text-secondary text-capitalize" href="#">log in</a>
+            </li>
+            <span class="pt-1">&verbar;</span>
+            <li class="nav-item px-1">
+                <a class="nav-link text-secondary text-capitalize" href="#">sign up</a>
+            </li>
+            <span class="pt-1">&verbar;</span>
+            <li class="nav-item px-1">
+                <a class="nav-link text-secondary text-capitalize" href="#">my wishlist</a>
+            </li>
+            <span class="pt-1">&verbar;</span>
+            <li class="nav-item px-1">
+                <a class="nav-link text-secondary text-capitalize" href="#">my account</a>
+            </li>
+            <span class="pt-1">&verbar;</span>
+            <li class="nav-item px-1">
+                <a class="nav-link text-secondary text-capitalize" href="#">checkout</a>
+            </li>
+        </ul>
+        <div class="d-inline-flex ml-md-auto mx-md-0 mx-sm-auto align-items-center">
+            <div class="circle bg-secondary mx-1"><a href="https://www.facebook.com" class="text-deco-none text-white text-center d-block" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
+            <div class="circle bg-secondary mx-1"><a href="https://www.twitter.com" class="text-deco-none text-white text-center d-block" target="_blank"><i class="fab fa-twitter"></i></a></div>
+            <div class="circle bg-secondary mx-1"><a href="https://www.linkedin.com" class="text-deco-none text-white text-center d-block" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+            <div class="circle bg-secondary mx-1"><a href="https://www.flickr.com" class="text-deco-none text-white text-center d-block" target="_blank"><i class="fab fa-flickr"></i></a></div>
+            <div class="circle bg-secondary ml-1"><a href="https://plus.google.com" class="text-deco-none text-white text-center d-block" target="_blank"><i class="fab fa-google-plus-g"></i></a></div>
+        </div>
+    </section>
+</footer>
+    <!--jquery-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--popper.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!--bootstrap.min.js-->
+    <script src="bootstrap-4.1.3/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

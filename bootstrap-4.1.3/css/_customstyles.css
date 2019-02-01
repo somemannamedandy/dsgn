@@ -1,0 +1,13 @@
+/*CUSTOM CSS FILE*/
+@font-face {
+  font-family: RobotoCondensed-Regular;
+  src: url("../../assets/fonts/RobotoCondensed-Regular.ttf"); }
+
+.dsng_links {
+  font-size: 1.12rem;
+  font-family: RobotoCondensed-Regular; }
+
+/*media queries*/
+/*Medium devices (tablets, 768px and up)MD*/
+/*Large devices (desktops, 992px and up)LG*/
+/*Extra large devices (large desktops, 1200px and up)XL*/
